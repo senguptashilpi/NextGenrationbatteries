@@ -9,18 +9,11 @@ A static research portfolio site: advanced battery materials, solid-state electr
 | `index.html` | Home: hero, introduction, research at a glance, innovation spotlight |
 | `research.html` | About & Research: biography, research activities, three research pillars |
 | `materials.html` | Materials & Prototypes: synthesis portfolio, polymer electrolyte, flagship supercapacitor |
-| `expertise.html` | Technical Expertise: capabilities, software and instrument tiles |
-| `contact.html` | Publications & Contact: publications, CV/patent downloads, contact form |
+| `expertise.html` | Technical Expertise: capabilities, software and instrument tables |
+| `contact.html` | Publications & Contact: publications, patent, book chapter, downloads, contact form |
 | `404.html` | Not-found page (GitHub Pages serves it automatically) |
 
 Shared styles are in `assets/css/style.css`; behaviour (mobile menu, scroll reveals, image lightbox, contact form) is in `assets/js/main.js`.
-
-## Before publishing
-
-Add the two PDFs the site links to (see `assets/docs/README.md`):
-
-- `assets/docs/CV_Shilpi_Sengupta.pdf`
-- `assets/docs/Patent_Shilpi_Sengupta.pdf`
 
 ## Deploy to GitHub Pages
 
@@ -44,6 +37,7 @@ Then open http://localhost:8000.
 ## Editing
 
 - **Text:** edit the HTML files directly. The header and footer are repeated in each page, so a change to the navigation must be made in all six files.
+- **Documents:** the CV, publication list and patent certificate are in `assets/docs/` (see the README there). To update one, replace the file under the same name.
 - **Images:** live in `assets/img/`. Keep photos under about 300 KB (around 1600 px on the long edge).
 - **Contact form:** GitHub Pages has no server, so the form opens the visitor's email app with the message pre-filled. The recipient is set by `data-to` on the `<form>` in `contact.html`. To receive submissions without email, point the form at a service such as Formspree.
 - **Colours and fonts:** set as CSS variables at the top of `style.css` (`--copper`, `--paper`, `--night` and so on).
